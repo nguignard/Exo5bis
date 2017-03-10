@@ -19,7 +19,6 @@ namespace Exo5bis
             frmExo5 frmPrinc = new frmExo5();
             frmPrinc.MdiParent = this;
             frmPrinc.Show();
-
         }
 
 
@@ -27,9 +26,18 @@ namespace Exo5bis
 
 
 
+        //FERMETURE FENETRE MDI////////////////////////////////////////
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
+        private void frmMdi_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult rep = new DialogResult();
+            rep = MessageBox.Show("Voulez vous vraiment fermer", "Exit", MessageBoxButtons.YesNo);
 
-
-
+            if (rep == DialogResult.No) e.Cancel=true;
+        }
     }
 }
