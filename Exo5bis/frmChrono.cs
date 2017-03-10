@@ -32,5 +32,10 @@ namespace Exo5bis
         {
             this.affiche();
         }
+
+        private void btnFermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

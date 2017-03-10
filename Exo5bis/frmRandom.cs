@@ -15,6 +15,28 @@ namespace Exo5bis
         public frmRandom()
         {
             InitializeComponent();
+            this.affiche();
+        }
+
+        private void affiche()
+        {
+            this.txtRandom.Text = Donnees.Nombre.ToString();
+        }
+
+        
+        private void btnActualiser_Click(object sender, EventArgs e)
+        {
+            this.affiche();
+        }
+
+        private void frmRandom_Activated(object sender, EventArgs e)
+        {
+            this.affiche();
+        }
+
+        private void btnFermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

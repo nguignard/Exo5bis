@@ -70,6 +70,7 @@
             this.btnFermer.TabIndex = 3;
             this.btnFermer.Text = "&Fermer";
             this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // frmChrono
             // 

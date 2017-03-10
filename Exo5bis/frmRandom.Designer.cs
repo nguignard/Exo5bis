@@ -59,15 +59,18 @@
             this.btnActualiser.TabIndex = 2;
             this.btnActualiser.Text = "&Actualiser";
             this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // btnFermer
             // 
+            this.btnFermer.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnFermer.Location = new System.Drawing.Point(137, 48);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(75, 23);
             this.btnFermer.TabIndex = 3;
             this.btnFermer.Text = "&Fermer";
             this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // frmRandom
             // 
@@ -82,6 +85,7 @@
             this.Controls.Add(this.lblRandom);
             this.Name = "frmRandom";
             this.Text = "frmRandom";
+            this.Activated += new System.EventHandler(this.frmRandom_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 
