@@ -52,14 +52,37 @@ namespace Exo5bis
                 this.frmC.Show();
                 this.frmC.FormClosing += new FormClosingEventHandler(fermeChrono);
             }
+            else
+            {
+                this.frmC.Close();
+            }
         }
 
         private void fermeChrono(object sender, FormClosingEventArgs e)
         {
-            frmC = null;
+            this.frmC = null;
         }
 
+        private void nombreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.frmR == null)
+            {
+                this.frmR = new frmRandom();
+                this.frmR.MdiParent = this;
+                this.frmR.Show();
+                this.frmR.FormClosing += new FormClosingEventHandler(fermeChrono);
+            }
+            else
+            {
+                this.frmR.Close();
+            }
+        }
+        private void fermeRandom(object sender, FormClosingEventArgs e)
+        {
+            this.frmR = null;
+        }
 
+        
 
     }
 }

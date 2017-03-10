@@ -189,6 +189,7 @@
             this.nombreToolStripMenuItem.Name = "nombreToolStripMenuItem";
             this.nombreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nombreToolStripMenuItem.Text = "Nombre";
+            this.nombreToolStripMenuItem.Click += new System.EventHandler(this.nombreToolStripMenuItem_Click);
             // 
             // editionToolStripMenuItem
             // 
