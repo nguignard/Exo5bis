@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblChrono = new System.Windows.Forms.Label();
             this.txtChrono = new System.Windows.Forms.TextBox();
             this.txtRandom = new System.Windows.Forms.TextBox();
             this.lblAleatoire = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lblChrono
@@ -68,6 +70,11 @@
             this.lblAleatoire.TabIndex = 2;
             this.lblAleatoire.Text = "Nombre Aléatoire";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmExo5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,5 +98,6 @@
         private System.Windows.Forms.TextBox txtChrono;
         private System.Windows.Forms.TextBox txtRandom;
         private System.Windows.Forms.Label lblAleatoire;
+        private System.Windows.Forms.Timer timer1;
     }
 }

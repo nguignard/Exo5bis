@@ -104,10 +104,7 @@ namespace Exo5bis
         private void fermeBox(object sender, FormClosingEventArgs e)
             { this.box=null;}
 
-
-
-
-    //
+            //
 
 }
 }
