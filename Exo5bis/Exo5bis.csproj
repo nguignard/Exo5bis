@@ -46,16 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmChrono.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmChrono.Designer.cs">
+      <DependentUpon>frmChrono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExo5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExo5.Designer.cs">
+      <DependentUpon>frmExo5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMdi.Designer.cs">
+      <DependentUpon>frmMdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRandom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRandom.Designer.cs">
+      <DependentUpon>frmRandom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="frmChrono.resx">
+      <DependentUpon>frmChrono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExo5.resx">
+      <DependentUpon>frmExo5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMdi.resx">
+      <DependentUpon>frmMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRandom.resx">
+      <DependentUpon>frmRandom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

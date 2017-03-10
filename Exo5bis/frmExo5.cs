@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Exo5bis
 {
-    public partial class Form1 : Form
+    public partial class frmExo5 : Form
     {
-        public Form1()
+        public frmExo5()
         {
             InitializeComponent();
         }
