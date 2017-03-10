@@ -15,6 +15,9 @@ namespace Exo5bis
         public frmExo5()
         {
             InitializeComponent();
+
         }
+
+        
     }
 }

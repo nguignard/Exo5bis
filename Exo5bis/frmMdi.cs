@@ -15,11 +15,21 @@ namespace Exo5bis
         public frmMdi()
         {
             InitializeComponent();
-          
 
-
+            frmExo5 frmPrinc = new frmExo5();
+            frmPrinc.MdiParent = this;
+            frmPrinc.Show();
 
         }
+
+
+
+
+
+
+
+
+
 
     }
 }
