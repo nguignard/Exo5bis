@@ -15,6 +15,7 @@ namespace Exo5bis
         frmExo5 frmPrinc;
         frmChrono frmC;
         frmRandom frmR;
+        AboutBox1 box;
 
 
         public frmMdi()
@@ -54,7 +55,7 @@ namespace Exo5bis
             }
             else
             {
-                this.frmC.Close();
+                this.frmC.Activate();
             }
         }
 
@@ -74,7 +75,7 @@ namespace Exo5bis
             }
             else
             {
-                this.frmR.Close();
+                this.frmR.Activate();
             }
         }
         private void fermeRandom(object sender, FormClosingEventArgs e)
@@ -82,7 +83,31 @@ namespace Exo5bis
             this.frmR = null;
         }
 
-        
 
-    }
+
+
+        private void àproposdeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (box == null)
+            {
+                this.box = new AboutBox1();
+                this.box.MdiParent = this;
+                this.box.Show();
+                this.box.FormClosing += new FormClosingEventHandler(fermeBox);
+            }
+            else
+            {
+                this.box.Activate();
+            }
+        }
+        
+        private void fermeBox(object sender, FormClosingEventArgs e)
+            { this.box=null;}
+
+
+
+
+    //
+
+}
 }

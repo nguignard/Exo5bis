@@ -322,8 +322,9 @@
             // àproposdeToolStripMenuItem
             // 
             this.àproposdeToolStripMenuItem.Name = "àproposdeToolStripMenuItem";
-            this.àproposdeToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.àproposdeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.àproposdeToolStripMenuItem.Text = "À &propos de...";
+            this.àproposdeToolStripMenuItem.Click += new System.EventHandler(this.àproposdeToolStripMenuItem_Click);
             // 
             // frmMdi
             // 
