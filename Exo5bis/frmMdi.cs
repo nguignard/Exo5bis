@@ -15,11 +15,11 @@ namespace Exo5bis
         public frmMdi()
         {
             InitializeComponent();
+          
+
+
+
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
