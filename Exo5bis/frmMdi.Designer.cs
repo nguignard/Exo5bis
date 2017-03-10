@@ -182,6 +182,7 @@
             this.chronoToolStripMenuItem.Name = "chronoToolStripMenuItem";
             this.chronoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.chronoToolStripMenuItem.Text = "Chrono";
+            this.chronoToolStripMenuItem.Click += new System.EventHandler(this.chronoToolStripMenuItem_Click);
             // 
             // nombreToolStripMenuItem
             // 

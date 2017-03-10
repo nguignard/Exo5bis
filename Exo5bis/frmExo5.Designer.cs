@@ -79,6 +79,7 @@
             this.Controls.Add(this.lblChrono);
             this.Name = "frmExo5";
             this.Text = "frmExo5";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmExo5_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

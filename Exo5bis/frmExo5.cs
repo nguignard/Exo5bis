@@ -15,9 +15,11 @@ namespace Exo5bis
         public frmExo5()
         {
             InitializeComponent();
-
         }
 
-        
+        private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

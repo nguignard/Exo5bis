@@ -12,19 +12,19 @@ namespace Exo5bis
 {
     public partial class frmMdi : Form
     {
+        frmExo5 frmPrinc;
+        frmChrono frmC;
+        frmRandom frmR;
+
+
         public frmMdi()
         {
             InitializeComponent();
 
-            frmExo5 frmPrinc = new frmExo5();
-            frmPrinc.MdiParent = this;
-            frmPrinc.Show();
+            this.frmPrinc = new frmExo5();
+            this.frmPrinc.MdiParent = this;
+            this.frmPrinc.Show();
         }
-
-
-
-
-
 
         //FERMETURE FENETRE MDI////////////////////////////////////////
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,7 +37,29 @@ namespace Exo5bis
             DialogResult rep = new DialogResult();
             rep = MessageBox.Show("Voulez vous vraiment fermer", "Exit", MessageBoxButtons.YesNo);
 
-            if (rep == DialogResult.No) e.Cancel=true;
+            if (rep == DialogResult.No) e.Cancel = true;
         }
+
+
+
+        //OUVERTURE CHRONO ET RANDOMM///////////////////////////////////////
+        private void chronoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.frmC == null)
+            {
+                this.frmC = new frmChrono();
+                this.frmC.MdiParent = this;
+                this.frmC.Show();
+                this.frmC.FormClosing += new FormClosingEventHandler(fermeChrono);
+            }
+        }
+
+        private void fermeChrono(object sender, FormClosingEventArgs e)
+        {
+            frmC = null;
+        }
+
+
+
     }
 }
