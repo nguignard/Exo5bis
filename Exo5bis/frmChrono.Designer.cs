@@ -59,9 +59,11 @@
             this.btnActualiser.TabIndex = 2;
             this.btnActualiser.Text = "&Actualiser";
             this.btnActualiser.UseVisualStyleBackColor = true;
+            this.btnActualiser.Click += new System.EventHandler(this.btnActualiser_Click);
             // 
             // btnFermer
             // 
+            this.btnFermer.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnFermer.Location = new System.Drawing.Point(125, 52);
             this.btnFermer.Name = "btnFermer";
             this.btnFermer.Size = new System.Drawing.Size(75, 23);
@@ -82,6 +84,7 @@
             this.Controls.Add(this.lblChrono);
             this.Name = "frmChrono";
             this.Text = "frmChrono";
+            this.Activated += new System.EventHandler(this.frmChrono_Activated);
             this.ResumeLayout(false);
             this.PerformLayout();
 

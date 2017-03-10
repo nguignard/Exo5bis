@@ -15,6 +15,22 @@ namespace Exo5bis
         public frmChrono()
         {
             InitializeComponent();
+            this.affiche();
+        }
+
+        private void affiche()
+        {
+            this.txtChrono.Text = Donnees.Temps.ToString();
+        }
+
+        private void btnActualiser_Click(object sender, EventArgs e)
+        {
+            this.affiche();
+        }
+
+        private void frmChrono_Activated(object sender, EventArgs e)
+        {
+            this.affiche();
         }
     }
 }

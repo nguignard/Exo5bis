@@ -15,30 +15,32 @@ namespace Exo5bis
     {
 
         private Random random = new Random();
-        
-        
+
+
         public frmExo5()
         {
             InitializeComponent();
-          
+            Donnees.Temps = 0;
+            Donnees.Nombre = 0;
+            this.affiche();
         }
 
         private void frmExo5_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-        
+
 
         // CREATION DU Chrono et du random
         private void timer1_Tick(object sender, EventArgs e)
         {
-            Donnees.Temps++;
+            this.affiche();
         }
-      
 
-
+        //
         public void affiche()
         {
+            Donnees.Temps++;
             this.txtChrono.Text = Donnees.Temps.ToString();
 
             Donnees.Nombre = random.NextDouble();
